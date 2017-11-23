@@ -1,0 +1,13 @@
+{
+    "name": "slashed-template",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node bootstrap/app.js"
+    },
+    "dependencies": {
+        "slashed": "~0.0.1-Alpha6",
+        "serve-static": "1.13.1",
+        "letsencrypt-client": "~1.0.1",
+        "rawacme": "~0.2.1"
+    }
+}
