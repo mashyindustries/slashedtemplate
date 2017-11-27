@@ -1,0 +1,8 @@
+@extends('layouts.master')
+
+@section('content')
+    <div class="center">
+        <h1 class="title">Hello World</h1>
+        <div class="center">The Server is up and Running!</div>
+    </div>
+@endsection

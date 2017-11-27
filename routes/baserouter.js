@@ -3,7 +3,7 @@
 var router = require('slashed').Router()
 
 router.get('/', function(req, res){
-    res.send('Hello World')
+    res.render('pages.home')
 })
 
 module.exports = router

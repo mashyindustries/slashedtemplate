@@ -1,3 +1,3 @@
 module.exports = {
-    basedir: "path:views"
+    basedir: "path:resources/views"
 }

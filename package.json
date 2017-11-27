@@ -2,12 +2,15 @@
     "name": "slashed-template",
     "version": "0.0.1",
     "scripts": {
-        "start": "node bootstrap/app.js"
+        "start": "node bootstrap/app.js",
+        "build": "gulp --gulpfile gulp/gulpfile.js",
+        "watch": "gulp watch --gulpfile gulp/gulpfile.js"
     },
     "dependencies": {
-        "slashed": "~0.0.1-Alpha6",
         "serve-static": "1.13.1",
-        "letsencrypt-client": "~1.0.1",
-        "rawacme": "~0.2.1"
+        "slashed": "~0.0.1-Alpha8",
+        "gulp-csso": "~3.0.0",
+        "gulp-less": "~3.3.2",
+        "gulp": "^3.9.1"
     }
 }
