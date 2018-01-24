@@ -3,6 +3,8 @@
 @section('content')
     <div class="center">
         <h1 class="title">Hello World</h1>
-        <div class="center">The Server is up and Running!</div>
+        <div class="center">The server is up and <strong>running!</strong></div>
+        <br>
+        <a href="/api">API</a>
     </div>
 @endsection
