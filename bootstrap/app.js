@@ -34,14 +34,16 @@ if(cluster.isMaster){
 
     //create server
     let options
-    http.createServer(app).listen(80)
+
+    app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000); // avoiding 'EACCESS' error
+
     if(os.platform() == 'linux'){
         options = {
             key: fs.readFileSync("/etc/letsencrypt/live/" + app.get('app.domain') + "/privkey.pem"),
             cert: fs.readFileSync("/etc/letsencrypt/live/" + app.get('app.domain') + "/fullchain.pem")
         }
     }
-    if(options){
+    if(options){ //TODO: handle https
         https.createServer(options, app).listen(443)
     }
 }
