@@ -8,4 +8,8 @@ router.get('/', function(req, res){
     res.send({"Hello World": "This is the API Endpoint"})
 })
 
+router.post('/dopost', function(req, res){
+    res.send('ok')
+})
+
 module.exports = router
